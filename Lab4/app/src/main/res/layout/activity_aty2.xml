@@ -135,5 +135,4 @@
         android:text="送出"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
-
 </android.support.constraint.ConstraintLayout>

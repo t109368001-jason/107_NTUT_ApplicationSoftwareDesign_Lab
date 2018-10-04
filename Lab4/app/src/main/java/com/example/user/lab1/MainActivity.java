@@ -5,9 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class aty1 extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     Button btn;
     TextView t_drink;
@@ -17,14 +20,14 @@ public class aty1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aty1);
+        setContentView(R.layout.activity_main);
 
         btn = (Button) findViewById(R.id.sent);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent();
-                i.setClass(aty1.this, aty2.class);
+                i.setClass(MainActivity.this, aty2.class);
                 startActivityForResult(i,0);
             }
         });
