@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         transData[1].photo = R.drawable.trans2;
         transData[2].photo = R.drawable.trans3;
         transData[3].photo = R.drawable.trans4;
-        myAdapter transAdapter = new myAdapter(transData, R.id.trans_list);
+        myAdapter transAdapter = new myAdapter(transData, R.layout.trans_list);
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         spinner.setAdapter(transAdapter);
 
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
         cubeeData[7].photo = R.drawable.cubee8;
         cubeeData[8].photo = R.drawable.cubee9;
         cubeeData[9].photo = R.drawable.cubee10;
-        myAdapter cubeeAdapter = new myAdapter(cubeeData, R.id.cubee_list);
+        myAdapter cubeeAdapter = new myAdapter(cubeeData, R.layout.cubee_list);
         GridView gridView = (GridView) findViewById(R.id.gridView);
         gridView.setNumColumns(3);
         gridView.setAdapter(cubeeAdapter);
