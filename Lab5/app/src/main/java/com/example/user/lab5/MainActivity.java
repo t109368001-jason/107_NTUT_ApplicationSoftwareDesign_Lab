@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void showToast(){
         Toast toast = new Toast(MainActivity.this);
-        toast.setGravity(Gravity.TOP, 0, 50);
+        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         toast.setDuration(Toast.LENGTH_SHORT);
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(R.layout.custom_toast, (ViewGroup) findViewById(R.id.layout));
